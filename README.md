@@ -1,2 +1,2 @@
 # Coursework-Homework-Excel-
-This is where I submitted my homework for UNC's Chapel Hill Data Analytics with a concentration on Excel
+This is where I submitted my coursework for The University of North Carolina at Chapel Hill Data Analytics Boot Camp
