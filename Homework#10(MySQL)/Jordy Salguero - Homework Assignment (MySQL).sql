@@ -58,13 +58,6 @@ SELECT first_name FROM actor
 	SET first_name = 'GROUCHO'
 	WHERE first_name = 'Harpo';
 
-	UPDATE actor
-	SET first_name = CASE
-		WHEN first_name = 'Harpo' THEN 'GROUCHO'
-    	WHEN first_name = 'Groucho' THEN 'MUCHO GROUCHO'
-    	ELSE first_name
-	END;
-
 #5a. You cannot locate the schema of the `address` table. Which query would you use to re-create it?
 #Hint:(https://dev.mysql.com/doc/refman/5.7/en/show-create-table.html)
 SHOW CREATE TABLE address;
