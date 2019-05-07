@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Dashboard (Latitude)</title>
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <style>
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        img.thumbnail {
+            float: left;
+            margin-right: 10px;
+            width: 185px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class = "container">  
+        <a h4 class="text-light" class="navbar-brand" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/index.html"><strong>Latitude</strong></h4></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/visualization_Max_Temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/visualization_Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/visualization_Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/visualization_Wind_Speed.html">Wind Speed</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/Comparisons.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Pages/Data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <div class="p-3 mb-2 bg-white text-dark">
+                    <div class="row">
+                            <div class="col-sm-12 col-md-8 border">
+                                <h1>WeatherPy: Latitude and Weather</h1>
+                                <p class=border>
+                                        <img src="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Images/max_temperature.png" alt="Max Temperature" width="300">
+                                        <p class="lead">The purpose of this project was to analyze how weather changes as you get closer to the
+                                            equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a
+                                            dataset on over 500 cities.
+                                            <br>
+                                            <br>
+                                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                                            latitude. Factors we looked at included: temperature, cloudiness, humidity, and wind speed. This
+                                            site provides the source data and visualizations created as part of the analysis, as well as
+                                            explanations and descriptions of any trends and correlations witnessed.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 border">
+                                <h2>Visualizations</h2>
+                                <div class="btn-group-vertical">
+                                        <img class="thumbnail" src="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Images/max_temperature.png" alt="Max Temperature">
+                                        <img class="thumbnail" src="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Images/humidity.png" alt="Humidity">
+                                        <img class="thumbnail" src="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Images/cloudiness.png" alt="Cloudiness" width="450px">
+                                        <img class="thumbnail" src="file:///C:/Users/jordy/Google%20Drive%20(jjsalguero01@gmail.com)/Homework/Coursework/Homework%2312(HTML)/Images/wind_speed.png" alt="Wind Speed" width="450px">
+                                </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>   
+</body>
+</html>
+
