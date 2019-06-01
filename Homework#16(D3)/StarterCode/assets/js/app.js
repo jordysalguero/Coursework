@@ -79,20 +79,17 @@ d3.csv("./assets/data/data.csv").then(function(Data) {
       .duration(500)
       .style("opacity", 0);	
       });
-    
-    // dots.append("text")
-    // .attr("font-size", 500)
-    // .attr("class", "stateText")
-    // .attr("dx", function(d) {
-    //    return xLinearScale(d.poverty);
-    // })
-    // .attr("dy", function(d) {
-    //   // Push text to center by a 1/3
-    //   return yLinearScale (d.healthcare)/3;
-    // })
-    // .text(function(d) {
-    //     return d.abbr;
-    //   })
+
+
+  var stateText = chartGroup.append('g').selectAll('text')
+    .data(Data)
+    .enter()
+    .append('text')
+    .classed('stateText',true)
+    .attr('x', d => xLinearScale(d.poverty))
+    .attr('y', d => yLinearScale(d.healthcare))
+    .attr('transform','translate(0,4.5)')
+    .text(d => d.abbr)
 
   // Add the X-axis
   var xAxis = chartGroup.append("g")
